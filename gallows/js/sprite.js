@@ -1,19 +1,6 @@
 
 const createSprite = seletor => {
 
-    let current = 0;
-    
-    const frames = [
-        "frame1", "frame2", "frame3", "frame4", "frame5",
-        "frame6", "frame7", "frame8", "frame9"
-    ];
-
-    const last = frames.length - 1;
-
-    const $sprite = $(seletor);
-
-    $sprite.addClass(frames[current]);
-
     const moveFrame = (from, to) =>
         $sprite.removeClass(from)
             .addClass(to);
@@ -36,6 +23,19 @@ const createSprite = seletor => {
     const isFinished = () =>
 
         !hasNext();
+
+    let current = 0;
+    
+    const frames = [
+        "frame1", "frame2", "frame3", "frame4", "frame5",
+        "frame6", "frame7", "frame8", "frame9"
+    ];
+
+    const last = frames.length - 1;
+
+    const $sprite = $(seletor);
+
+    $sprite.addClass(frames[current]);
 
     return { //return javascript object with property nextFrame and value nextFrame method
         nextFrame,

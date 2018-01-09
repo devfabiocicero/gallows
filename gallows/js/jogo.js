@@ -1,11 +1,6 @@
 
 const criaJogo = sprite => { //param equals object sprite
 
-    let etapa = 1;
-    let lacunas = [];
-    let palavraSecreta = "";
-    let resultadoJogo = false; 
-
     const criaLacunas = () =>
         
         lacunas = Array(palavraSecreta.length).fill("");
@@ -75,6 +70,11 @@ const criaJogo = sprite => { //param equals object sprite
         palavraSecreta = "";
         etapa = 1;
     }
+
+    let etapa = 1;
+    let lacunas = [];
+    let palavraSecreta = "";
+    let resultadoJogo = false; 
 
     return {
 
