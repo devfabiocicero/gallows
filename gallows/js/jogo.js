@@ -68,12 +68,13 @@ const criaJogo = sprite => { //param equals object sprite
 
        ganhou() || perdeu();
 
-    const reinicia = () =>
+    const reinicia = () => {
 
         sprite.reset();
         lacunas = [];
         palavraSecreta = "";
         etapa = 1;
+    }
 
     return {
 
