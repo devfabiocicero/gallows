@@ -38,7 +38,7 @@ const createSprite = seletor => {
 
     sprite.addClass(frames[current]);
 
-    return { //return javascript object with property nextFrame and value nextFrame method
+    return { //return javascript object with properties nextFrame, reset and isFinished
         nextFrame,
         reset,
         isFinished
