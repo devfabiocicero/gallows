@@ -83,8 +83,8 @@ const criaController = jogo => {
         });
     };
 
-    let entrada = $(".entrada");
-    let lacunas = $(".lacunas");
+    const entrada = $(".entrada");
+    const lacunas = $(".lacunas");
 
     // retorna um objeto com a propriedade inicia, que deve ser chamada assim que o controller for criado. 
     return {
